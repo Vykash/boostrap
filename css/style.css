@@ -1,0 +1,852 @@
+/*MEDIA*/
+@media (max-width: 1440px){
+        .hidden-col{
+        display: none;
+    }
+    .secondary-menu-row .custom-col{
+        height: auto;
+    }
+    .navbar .navbar-brand{
+        width: 20%!important; 
+    }
+    .laptop-col .img-margin{
+        width: 100%;
+        margin: 15px;
+    }
+    #main-header .navbar{
+        width: 100%;
+    }
+     .who-we-are .content_wrapper{
+        width: 100%;
+    }
+    .who-we-are.pb-2 h5{
+        font-size: 45px
+    }
+    .custom-col .who-we-are .btn-custom-t{
+        width: 40%;
+        margin-bottom: 15px!important;
+    }
+    
+    .menu-items ul li a{
+        font-size: 16px;
+    }
+}
+@media (max-width: 1200px){
+    #main-header .navbar{
+        width: 100%;
+    }
+    .navbar-toggler-icon{
+        display: none;
+    }
+    
+    .navbar .navbar-brand{
+        width: 20%!important; 
+    }
+    
+    .who-we-are .content_wrapper{
+        width: 100%;
+    }
+    .who-we-are.pb-2 h5{
+        font-size: 45px
+    }
+    .custom-col .who-we-are .btn-custom-t{
+        width: 40%;
+        margin-bottom: 15px!important;
+    }
+    
+    .menu-items ul li a{
+        font-size: 16px;
+    }
+    .laptop-col .img-margin{
+        width: 100%;
+        margin: 15px;
+    }
+
+}
+@media (max-width: 768px){
+    
+    .navbar .navbar-brand{
+        width: 50%!important; 
+    }
+    .right-nav-box{
+        width: 50%!important;
+    }
+    .navbar{
+        
+    }
+    
+    .cross-icon-close-toggle{
+        background-image: url(../img/Red_cross_tick.png)!important;
+    }
+    .navbar-expand-lg .navbar-toggler{
+        display: block;
+        background-image: url(../img/hamburger.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        top: 40px;
+        right: 0px;
+        position: absolute;
+        height: 100%;
+    }
+    .gallery{
+    display: none;
+    }
+    .c-wrapper{
+        width: 100%!important;
+    }
+}
+@media (max-width: 360px){
+    #main-header .navbar{
+        width: 100%;
+    }   
+    #main-header .right-nav-box{
+        width: 63%;
+        
+    }   
+    .navbar-toggler-icon{
+        display: block;
+    }
+    .navbar .navbar-brand.no-gutters{
+        width: 27%;
+    }
+}
+
+
+/*_--_-----_---_--_-_----_--_-_---_----__*/
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+/*CLASSI Custom*/
+
+.section_divisor{
+    padding-bottom: .5rem;
+    padding-top: .5rem;
+    border-bottom: 1px solid #ccc;
+}
+.bg-container {
+    background-image: url(../img/laptop-wallpaper-1920x1080.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.custom-opacity {
+    opacity: 0.9;
+}
+.margin-100{
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+.margin-50{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.custom-font{
+    font-weight: 600;
+    font-size: 44px;
+    padding: .5rem;
+}
+.custom-font-2 {
+    font-size: 44px;
+    font-weight: normal;
+}
+.small-font-bold {
+    font-size: 13px;
+    font-weight: 600;
+    color: #000;
+    padding-bottom: 1rem;
+}
+.margin-100{
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+.btn-border{
+    border: 1.5px solid #fff;
+}
+.btn-custom-t{
+    position: relative;
+    overflow: hidden;
+    border-radius: 1.5rem;
+    font-size: 13px;
+    width: 17%;
+    font-weight: 600;
+}
+.bg-custom{
+    background-image: linear-gradient(to top right, darkblue, cornflowerblue);
+}
+.no-p{
+    padding: 0px!important;
+}
+.display-6{
+    font-size: 30px;
+    letter-spacing: 1.5px;
+}
+.dark-light{
+    background-color: rgba(54,54,54);
+}
+.h-60 {
+    height: 60%;
+}
+
+/*-----*/
+
+#main-header{
+    height: 98vh;
+    background-image: url(../img/311247-beautiful-office-background-2000x1333-xiaomi.jpg);
+    background-size: cover;
+    width: 100%;
+    margin-bottom: 50px;
+    background-position: center center;
+}
+
+/*JS*/
+.margin-toggle{
+    margin-top: 15px;
+}
+
+
+/*--------*/
+
+
+.custom-col{
+    height: 480px;
+}/*CAMBIARE*/
+
+
+/*NAVBAR*/
+.navbar-header{
+    width: 100%;
+    text-align: center;
+}
+.navbar{
+    z-index: 1000;
+    width: 53%;
+    margin: 0 auto;
+    padding: 2.5rem 0rem 2.5rem 0rem;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    transition: background-color 300ms linear;
+}
+.navbar a{
+    color: #fff;
+    font-size: 14px;
+}
+.navbar li{
+    padding-right: .5rem;
+    padding-left: .5rem;
+}
+.navbar .navbar-brand{
+    text-transform: uppercase;
+    font-size: 19px;
+    line-height: 10px;
+    width: 15%;
+    margin: 0 auto;
+    vertical-align: top;
+}
+.navbar.navbar-expand-lg i{
+    
+    font-size: 25px;
+    padding-right: 15px;
+}
+.right-nav-box{
+    height: 25px;
+    width: 23%;
+    position: relative;
+}
+.custom-btn{
+    background-color: transparent;
+    height: 30px;
+    border: 1px solid #fff;
+    border-radius: 15px;
+    font-size: 12px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    color: #fff;
+    margin-left: .5rem;
+}
+.navbar-expand-lg .navbar-toggler{
+    display: inline-block;
+    position: absolute;
+    top: 0;
+}
+.navbar.navbar-expand-lg .right-nav-box i{
+    color: #fff;
+    font-size: 15px;
+    padding-left: 1rem;
+}
+.main-title-container{
+    top: 30vh;
+    height: 300px;
+    position: relative;
+    color: #fff;
+}
+.main-title-container .btn-lg{
+    padding: .9rem;
+}
+.main-title{
+    font-size: 3.5rem;
+    font-weight: 600;
+    letter-spacing: .4rem;
+}
+.title_after_before{
+    letter-spacing: .4rem;
+    font-size: 1rem;
+}
+.text_divisor{
+    padding-right: .5rem;
+    padding-left: .5rem;
+}
+.navbar.bg-light{
+    transition: background-color 300ms linear;
+}
+.section_separator{
+    width: 120px;
+    margin-top: 1.5rem;
+    height: .2rem;
+    background-color: darkblue;
+    display: flex;
+}
+.section_separator.bg-white{
+    width: 80px;
+    margin-top: 1rem;
+    height: .2rem;
+    opacity: 0.7;
+    margin-bottom: 2rem;
+}
+.office-container{
+    background-image: url(../img/officepeople.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.icon-container i{
+    color: cornflowerblue;
+    font-size: 3rem;
+    margin-bottom: 3.5rem;
+}
+.col-title h5{
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 1.5px;
+    padding-bottom: 1.5rem;
+}
+.welcome_landing a{
+    color: #000;
+    font-weight: 800;
+}
+.small.text-center{
+    line-height: 25px;
+}
+.img-container {
+    background-image: url(../img/Laptop-Free-PNG-Image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 533px;
+    height: 430px;
+    position: relative;
+    top: 50px;
+    left: 51px;
+    z-index: 100;
+    display: inline-block;
+}
+
+
+/*SEZIONE WHO WE ARE*/
+
+.content_wrapper{
+    width: 55%;
+}
+.menu-items ul,
+.who-we-are{
+    margin-top: 80px;
+}
+.who-we-are h5{
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 2.5px;
+    color: #fff;
+}
+
+
+/*MENU BANNER*/
+.menu-items li a{
+    width: 100%;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+.menu-items li a:hover{
+    text-decoration: none;
+    color: #ccc!important;
+    transition: all 0.6s ease-in-out;
+}
+.menu-items li a::after{
+    content: '';
+    height: 0px;
+    width: 4px;
+    background-color: white;
+    display: inline-block;
+    margin-left: 15px;
+    transition: all 0.4s ease-in-out
+}
+.menu-items li a:hover::after{
+     height: 12px;
+     transition: all 0.4s ease-in-out
+}
+.subtitle_small{
+    color: #fff;
+    letter-spacing: 4.5px;
+}
+p.small.text-white{
+    line-height: 1.5rem;
+}
+.btn-custom-t:before{
+    content: '';
+    width: 50%;
+    background: linear-gradient(120deg, transparent, #fff, transparent);
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -300px;
+    transform: skew(-15deg);
+    transition: 0.9s ease-in;
+    animation-delay: 0.5s;
+}
+.btn-custom-t:hover:before{
+    left: 200px;
+    opacity: 0.3
+}
+
+/*NAVBAR PROGETTI*/
+.projects-navbar ul{
+    list-style: none;
+    float: none;
+    margin-bottom: 25px;
+}
+.projects-navbar li{
+    display: inline-block;
+    text-transform: uppercase;
+}
+.projects-navbar a{
+    font-size: 13px;
+    font-weight: 600;
+    color: #000;
+    padding-bottom: 1rem;
+    /*border-bottom: 2px solid darkblue;*/
+}
+.projects-navbar a:hover{
+    text-decoration: none;
+}
+.projects-navbar a::after{
+    content: '';
+    height: 3px;
+    background-color: darkblue;
+    width: 5%;
+    margin-top: 10px;
+    display: block;
+    opacity: 0;
+    transition: all 0.4s ease-in-out
+}
+.projects-navbar a:hover:after{
+    width: 100%;
+    opacity: 1;
+    transition: all 0.4s ease-in-out
+}
+
+/*CAROLESSO IMG*/
+
+.carousel-col{
+    height: 800px;
+}
+.carousel-col-center{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.image-container-medium{
+    margin-bottom: 30px;
+    height: 40%;
+}
+.image-container-large{
+    height: 56%;
+}
+.image-container-small{
+    height: calc(100%/3 - 20px);
+    margin-bottom: 30px;
+    background-color: white;
+}
+.image-container-large:nth-of-type(1){
+    margin-bottom: 30px;
+}
+.carousel-image{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+}
+.item-1{
+    background-image: url(../img/Lagoon_art_glass_vases.jpg)
+}
+.item-2{
+    background-image: url(../img/bottleaert.jpg);
+}
+.item-3{
+    background-image: url(../img/a23-p772.712_4.jpg);
+}
+.item-4{
+    background-image: url(../img/tib-portfolio-bn-bc.jpg)
+}
+.item-5{
+    background-image: url(../img/download.jpg)
+}
+.item-6{
+    background-image: url(../img/normann-copenhagen-liqueur-and-cognac-glass.jpg-600x563.jpg)
+}
+.item-7{
+    background-image: url(../img/mobile-phone-cardboard-box-500x500.jpg)
+}
+.overlay-hidden-hover{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-image: linear-gradient(to top right,cornflowerblue, darkblue);
+    opacity: 0;
+    top: 0;
+    z-index: 100;
+    left: 0;
+    transition: all 0.4s ease-in-out;
+}
+.overlay-hidden-hover h3{
+    font-size: 19px;
+    padding-right: 2rem;
+    padding-top: 2rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+.overlay-cat{
+    font-size: 12px;
+    padding-right: 2rem;
+}
+.carousel-image:hover .overlay-hidden-hover{
+    opacity: 0.9;
+    transition: all 0.4s ease-in-out;
+}
+
+
+
+
+/*CALL To action banner*/
+.call-to-action {
+    height: 215px;
+}
+.c-wrapper {
+    width: 65%;
+    height: 100%;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding-left: 2.2rem;
+    padding-right: 2.2rem;
+}
+
+.header-overlay {
+    height: 100%;
+    width: 100%;
+}
+
+.box-hover-effect {
+    height: 300px; 
+}
+
+.offers-section {
+    position: relative;
+    border-right: 4px solid #fff;
+    border-left: 4px solid #fff;
+    border-bottom: 4px solid #fff;
+}
+.offers-section:hover .border-icon i{
+    color: darkblue;
+    transition: all 0.6s ease-in-out;
+}
+.offers-section:hover::before{
+    width: 75%;
+    background-color: darkblue;
+    transition: all 0.8s ease-in-out
+}
+.offers-section:hover .border-icon-1{
+    height: 100%;
+    transition: all 0.8s ease-in-out;
+}
+.offers-section:hover .border-icon-2{
+    width: 100%;
+    transition: all 0.8s ease-in-out;
+}
+.offers-section:hover .border-icon-3{
+    height: 100%;
+    transition: all 0.8s ease-in-out;
+}
+.offers-section::before{
+    content: '';
+    width: 0%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: darkblue;
+    height: 5px;
+    display: inline-block;
+    vertical-align: top;
+    transition: all 1s ease-in-out
+}
+
+.border-icon {
+    position: absolute;
+    right: 25px;
+    top: -20px;
+    font-size: 35px;
+}
+
+.border-icon-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0%;
+    background-color: darkblue;
+    width: 5px;
+}
+
+.border-icon-2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: darkblue;
+    width: 0%;
+    height: 5px;
+}
+
+.border-icon-3 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 0%;
+    width: 5px;
+    background-color: darkblue;
+}
+
+
+
+.text-container {
+    height: 100%;
+    width: 100%;
+    padding: 2.5rem;
+}
+.offer-title {
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 1.5px;
+    padding-bottom: 1.5rem;
+}
+.offer-desc {
+    line-height: 20px;
+    font-size: 13px;  
+}
+
+/*BARRA SKILLS*/
+
+.image-wrapper{
+    height: 100%;
+    height: 200px;
+}
+.image-wrapper img {
+    width: 100%;
+    height: 90%;
+}
+.progress-bar {
+    margin-bottom: 28px;
+    height: 60px;
+}
+.single-bar {
+    height: 5px;
+    position: relative;
+    width: 100%;
+}
+.single-bar-overlay{
+    height: 5px;
+    background-color: #f8f9fa;
+    position: absolute;
+    right: 0;
+}
+.single-bar-overlay-w40 {
+    width: 40%;
+}
+.single-bar-overlay-w15 {
+    width: 15%;
+}
+.single-bar-overlay-w55 {
+    width: 55%;
+}
+.single-bar-overlay-w13 {
+    width: 13%;
+}
+.single-bar-overlay-w30 {
+    width: 30%;
+}
+.progress_number {
+    font-size: 13px;
+    font-weight: 600;
+    position: absolute;
+    right: 15px;
+}
+.progress-container {
+    padding-left: 50px;
+    padding-top: 40px;
+}
+.img-3-col {
+    float: left;
+    width: calc(100% / 3);
+    padding-right: 20px;
+    max-width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+.carousel-container {
+    padding-bottom: 100px;
+}
+
+/*CONTATORE*/
+
+.counter-container {
+    background-image: url(../img/bgfullwidthcounter.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center
+}
+.counter-item {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-top: 75px;
+    padding-bottom: 90px;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 600;
+}
+.counter-item i{
+    position: absolute;
+    left: 35px;
+    top: 95px;
+    font-size: 40px;
+}
+.counter-font {
+    font-size: 40px;
+    font-weight: 200;
+    letter-spacing: 1.5px;
+}
+.counter-item-title {
+    font-size: 13px;
+}
+
+/*IMMAGINE SINISTRA BLOG*/
+
+.img-cont {
+    position: relative;
+}
+.img-cont img{
+    
+    width: 100%;
+    height: 100%;
+}
+.img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    opacity: 0.4;
+}
+
+/*BLOG POST*/
+
+.post-date {
+    height: 100%;
+    display: inline-block;
+    padding: 2rem;
+    width: 30%;
+    vertical-align: top;
+    position: relative;
+}
+.post-date::after{
+    content: '';
+    right: 1rem;
+    top: 3rem;
+    height: 70px;
+    position: absolute;
+    width: 1px;
+    background-color: #ccc;
+}
+.post-date .data-month{
+    font-size: 14px;
+}
+.post-date .data-number{
+    font-size: 45px;
+    font-weight: 200;
+}
+.post-content {
+    width: 69%;
+    display: inline-block;
+    height: 100%;
+    padding: 2.5rem;
+}
+.post-author {
+    font-size: 12px;
+    position: relative;
+    font-weight: 600;
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+}
+.post-author i{
+    color: grey;
+    font-size: 11px;
+    position: absolute;
+    right: 110px;
+    top: 3px;
+}
+.post-author .author,
+.category{
+    color: darkblue;
+}
+a .post-main{
+    line-height: 25px;
+    font-size: 16px;
+    text-decoration: none;
+}
+.post-content a:hover{
+    text-decoration: none;
+}
+.share-counter {
+    font-size: 12px;
+    font-family: inherit;
+    font-weight: 600;
+    padding-left: 3px;
+}
+
+/*CUSTOMIZE SECTION*/
+.customize-section-title {
+    font-size: 14px;
+}
+.customize-section-desc {
+    font-size: 13px;
+    line-height: 25px;
+}
+.img-margin {
+    margin-left: 80px;
+}
+.customize-section-btn {
+    width: 32%;
+    height: 44px;
+}
