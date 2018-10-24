@@ -61,6 +61,13 @@
         width: 100%;
         margin: 15px;
     }
+    .brands-container .brands-inner{
+        width: 100%;
+    }
+    
+    .main-footer .footer-navbar-social{
+        width: 100%!important;
+    }
 
 }
 @media (max-width: 768px){
@@ -71,28 +78,79 @@
     .right-nav-box{
         width: 50%!important;
     }
-    .navbar{
-        
-    }
-    
     .cross-icon-close-toggle{
         background-image: url(../img/Red_cross_tick.png)!important;
     }
     .navbar-expand-lg .navbar-toggler{
         display: block;
         background-image: url(../img/hamburger.png);
-        background-size: cover;
+        background-size: contain;
         background-repeat: no-repeat;
         top: 40px;
         right: 0px;
         position: absolute;
         height: 100%;
     }
+    #main-header .main-title-container{
+        top: 15vh;
+    }
+    .main-title-container .btn-custom-t{
+        width: 30%;
+    }
     .gallery{
     display: none;
     }
     .c-wrapper{
         width: 100%!important;
+    }
+    .menu-items ul{
+        text-align: center;
+        padding: 0!important;
+        margin-top: 20px!important;
+    }
+    .who-we-are{
+        text-align: center;
+        padding: 0px 0px 20px 0px!important;
+        margin-top: 20px!important;
+    }
+    .who-we-are .section_separator{
+        opacity: 0!important;
+    }
+    .custom-col .who-we-are .btn-custom-t{
+        width: 20%;
+        border: 2px solid #fff;
+    }
+    .masonry-filters li{
+        padding-left: 0!important;
+    }
+    .offers-section{
+        margin-top: 0!important;
+    }
+    .offers-section:hover::before{
+        width: 85%!important;
+    }
+    .progress-container{
+        padding: 3rem 0px 0px 0px!important;
+    }
+    .blog-col{
+        padding: 3rem 0rem 0rem 0rem!important;
+    }
+    .brands-container .brands-inner{
+        padding: 1.5rem;
+    }
+    .social-navbar li{
+        
+        width: calc(100% / 7 - 17px);
+        padding: .5rem!important;
+        letter-spacing: 0px!important;
+    }
+    .social-navbar li::after{
+        display: none!important;
+    }
+    .main-footer .footer-links li{
+        display: block;
+        width: 50%;
+        
     }
 }
 @media (max-width: 360px){
@@ -222,7 +280,7 @@ body{
 }
 .navbar{
     z-index: 1000;
-    width: 53%;
+    width: 60%;
     margin: 0 auto;
     padding: 2.5rem 0rem 2.5rem 0rem;
     border-bottom: 1px solid rgba(255,255,255,0.2);
@@ -238,19 +296,18 @@ body{
 }
 .navbar .navbar-brand{
     text-transform: uppercase;
-    font-size: 19px;
-    line-height: 10px;
-    width: 15%;
+    font-size: 25px;
+    line-height: 50px;
+    width: 19%;
     margin: 0 auto;
     vertical-align: top;
 }
 .navbar.navbar-expand-lg i{
     
-    font-size: 25px;
+    font-size: 35px;
     padding-right: 15px;
 }
 .right-nav-box{
-    height: 25px;
     width: 23%;
     position: relative;
 }
@@ -277,7 +334,6 @@ body{
 }
 .main-title-container{
     top: 30vh;
-    height: 300px;
     position: relative;
     color: #fff;
 }
@@ -849,4 +905,144 @@ a .post-main{
 .customize-section-btn {
     width: 32%;
     height: 44px;
+}
+
+.brand-item {
+    width: calc(100% / 5 - 4px);
+    display: inline-block;
+}
+
+.brands-inner {
+    width: 65%;
+    padding: 4.5rem;
+}
+
+.brands-container {
+    background-color: #F8F8F8;
+}
+
+.main-footer {
+    background-color: #042233;
+    width: 100%;
+}
+
+.social-navbar {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid rgba(233,233,233,0.2);
+}
+
+.social-navbar li{
+    padding: 1rem;
+    display: inline-block;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.social-navbar li::after{
+    content: '';
+    height: 15px;
+    width: 2px;
+    margin-left: 50px;
+    background-color: rgba(244,244,244,0.2);
+    transform: skewX(-25deg);
+    bottom: -3px;
+    display: inline-block;
+    position: relative;
+}
+
+.social-navbar li a{
+    color: #fff;
+}
+
+.social-navbar li:nth-of-type(7)::after{
+    display: none;
+}
+
+.social-navbar li a:hover{
+    
+    text-decoration: none;
+    color: #ccc;
+    transition: all 0.6s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer-links li{
+    display: inline-block;
+    width: 40%;
+    padding: 8px;
+}
+
+.footer-links li a{
+    font-size: 13px;
+    color: #fff;
+}
+
+.footer-links-title {
+    font-size: 14px;
+    font-weight: 600;
+    padding: .5rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    position: relative;
+}
+.footer-links-title::before{
+    content: '';
+    height: 17px;
+    width: 5px;
+    background-color: #fff;
+    display: inline-block;
+    position: absolute;
+    left: -15px;
+}
+
+.addres-text {
+    font-size: 13px;
+    padding-bottom: 1rem;
+
+}
+
+.copyright {
+    padding: 1rem;
+}
+
+.copyright-container {
+    border-top: 1px solid rgba(233,233,233,0.2);
+}
+
+.footer-brand h3{
+    font-size: 20px;
+}
+.footer-brand p{
+    font-size: 11px;
+    color: rgb(180,180,180)
+}
+
+.footer-brand i{
+    font-size: 40px;
+    display: block;
+    padding-bottom: 15px;
 }
