@@ -153,6 +153,36 @@
         
     }
 }
+@media (max-width: 560px){
+    .navbar{
+        padding-left: 10px!important;
+        padding-right: 10px!important;
+    }
+    .welcome_landing .col-md-4{
+        margin-top: 35px;
+    }
+    .projects-navbar a{
+        font-size: 11px!important;
+    }
+    .projects-navbar li:nth-of-type(6){
+        padding: 0px!important;
+    }
+    .c-wrapper{
+        padding-top: 2.5rem!important;
+    }
+    .call-to-action .btn-custom-t{
+        width: 35%!important;
+    }
+    .laptop-col .img-margin{
+        width: 95%!important;
+    }
+    .brand-item:nth-of-type(1){
+        display: none;
+    }
+    .brand-item{
+        width: calc(100% / 4 - 4px)!important;
+    }
+}
 @media (max-width: 360px){
     #main-header .navbar{
         width: 100%;
@@ -167,6 +197,8 @@
     .navbar .navbar-brand.no-gutters{
         width: 27%;
     }
+    
+    
 }
 
 
@@ -260,6 +292,7 @@ body{
 }
 
 /*JS*/
+
 .margin-toggle{
     margin-top: 15px;
 }
@@ -511,7 +544,7 @@ p.small.text-white{
     transition: all 0.4s ease-in-out
 }
 
-/*CAROLESSO IMG*/
+/*MASONRY IMG*/
 
 .masonry-col{
     height: 800px;
