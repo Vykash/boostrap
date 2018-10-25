@@ -13,40 +13,49 @@ jQuery(document).ready(function() {
     $('.navbar-toggler').on('click',function(){
         $('.navbar-toggler').toggleClass('cross-icon-close-toggle');
     });
-    
-    jQuery('.masonry .masonry-image').each(function(){
+    //assegno indici agli elementi
+    jQuery('.masonry-wrap .masonry-image').each(function(){
         var x = jQuery(this).index();
         var y = jQuery(this).parent().index();
         jQuery(this).attr('data-order',x).attr('data-col',y);
     });
     
-    var colN = jQuery('.masonry .masonry-col').lenght;
     jQuery('.masonry-filters li a').on('click', function(e){
         e.preventDefault();
+        var colN = jQuery('.masonry-wrap .masonry-col').length;
+
         
         var target = jQuery(this).parent('li').attr('data-target');
         if(target != 'all'){
-            jQuery('.masonry .masonry-col .masonry-image').hide();
-            jQuery('.masonry .masonry-image[data-cat="'+target+'"]').each(function(i){
-                   jQuery(this).appendTo(jQuery('.masonry .masonry-col').eq(i));
-                   jQuery(this).show();
-                i++;
+            jQuery('.masonry-wrap .masonry-col .masonry-image').hide();
+            jQuery('.masonry-wrap .masonry-image[data-cat="'+target+'"]').each(function(i){
+                if(i >= colN){
+                    i = 0;
+                }
+                jQuery(this).appendTo(jQuery('.masonry-wrap .masonry-col').eq(i));
+                jQuery(this).show();
+
+                
             });
         }else{
-            jQuery('.masonry .masonry-col .masonry-image').show();
-            jQuery('.masonry .masonry-image').each(function(c){
+            jQuery('.masonry-wrap .masonry-col .masonry-image').show();
+            c = 0;
+            h = 0;
+            jQuery('.masonry-wrap .masonry-image').each(function(){
+                var g = jQuery('.masonry-wrap .masonry-image[data-col="'+c+'"]').length-1;
                 
+                jQuery('.masonry-wrap .masonry-image[data-col="'+c+'"][data-order="'+h+'"]').appendTo(jQuery('.masonry-wrap .masonry-col').eq(c));
                 
-                var i = jQuery(this).attr('data-order');
-                var i2 = jQuery(this).next().attr('data-order');
-                jQuery('.masonry .masonry-col[data-col="'+c+'"]');
-                
-                
-                if(i2 == 0){
+                if(h == g){
                     c++;
+                    h = 0;
+                }else{
+                    h++;
                 }
+            
             });
         }
     });
+    
     
 });
