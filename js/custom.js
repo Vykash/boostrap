@@ -58,7 +58,18 @@ jQuery(document).ready(function() {
     
     ///////////////////////////////////////
     
+    //TABS
     
+    jQuery('.menu-items li a').on('click',function(e){
+        e.preventDefault();
+        // ottengo il data-target del link
+        var attrLink = jQuery(this).attr('data-target')
+        //rimuovo tutti gli elementi active
+        jQuery('.who-we-are').removeClass('active');
+        //aggiungo la classe active all' elemento con il 'data-target' uguale a quello del link
+        jQuery('.who-we-are[data-target='+attrLink+']').addClass('active');
+          
+    })
     
 
     //////////////////////////////////////

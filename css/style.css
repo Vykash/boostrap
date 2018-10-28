@@ -112,6 +112,8 @@
         text-align: center;
         padding: 0px 0px 20px 0px!important;
         margin-top: 20px!important;
+        position: absolute!important;
+        top: 0px;
     }
     .who-we-are .section_separator{
         opacity: 0!important;
@@ -524,6 +526,16 @@ body{
 .menu-items ul,
 .who-we-are{
     margin-top: 80px;
+}
+
+.who-we-are.active{
+    opacity: 1;
+    z-index: 1000;
+    transition: all 1s ease-in-out
+}
+.who-we-are{
+    opacity: 0;
+    position: absolute;
 }
 .who-we-are h5{
     font-size: 30px;
@@ -1152,4 +1164,8 @@ a .post-main{
     font-size: 40px;
     display: block;
     padding-bottom: 15px;
+}
+
+.tabs-container {
+    position: relative;
 }
