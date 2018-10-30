@@ -104,7 +104,7 @@
         width: 100%!important;
     }
     .menu-items ul{
-        text-align: center;
+        text-align: left;
         padding: 0!important;
         margin-top: 20px!important;
     }
@@ -239,6 +239,100 @@
         width: 27%;
     }
     
+    .right-nav-box{
+        width: 100%!important;
+    }
+    .navbar .navbar-brand{
+        width: 40%!important;
+        padding-bottom: 15px;
+    }
+    .main-title-container .btn-custom-t{
+        width: 45%;
+    }
+    
+    body .section-font{
+        font-size: 30px;
+    }
+    .who-we-are.active{
+        display: block!important;
+        position: static!important;
+    }
+    .who-we-are.pb-2 h5{
+        font-size: 38px;
+    }
+    .custom-col .who-we-are .btn-custom-t{
+        width: 50%;
+    }
+    .projects-navbar ul li{
+        display: block;
+        padding: 0!important;
+        text-align: center;
+        
+    }
+    .projects-navbar ul li a{
+        font-size: 17px!important;
+    }
+    .masonry-image{
+        margin: 0px!important;
+    }
+    
+    .menu-items ul li{
+        display: inline-block;
+        width: 100%;
+    }
+    .c-wrapper .display-6{
+        font-size: 20px;
+    }
+    .call-to-action .c-wrapper{
+        padding: 20px!important;
+    }
+    .call-to-action .btn-custom-t{
+        width: 50%!important;
+    }
+    .post-date::after{
+        display: none;
+    }
+    .blog-post-article .post-date{
+        padding: 0px;
+    }
+    .blog-post-article{
+        text-align: center;
+    }
+    .blog-post-article .post-content{
+        width: 100%;
+    }
+    .post-author i{
+        right: -15px!important;
+    }
+    .main-footer .social-navbar li{
+        display: none;  
+    }
+    .main-footer .social-navbar i{
+        display: inline-block;
+        color: lightgray;
+        padding: .7rem;
+        font-size: 21px;
+    }
+    .main-footer .footer-links li{
+        display: inline-block;
+        width: 32%;
+    }
+    .footer-links-title{
+        text-align: center;
+    }
+    .footer-links-title::before{
+        left: 85px!important;
+    }
+    .footer-brand{
+        text-align: center;
+        padding-bottom: 30px;
+    }
+    .footer-brand i{
+        font-size: 25px;
+    }
+    .footer-brand h5{
+        font-size: 35px;
+    }
     /*SLIDER*/
     
     .brand-item.slider-active{
@@ -372,6 +466,11 @@ body{
 .margin-toggle{
     margin-top: 15px;
 }
+.who-we-are.active{
+    opacity: 1;
+    position: absolute;
+}
+
 
 
 /*--------*/
@@ -479,12 +578,6 @@ body{
     opacity: 0.7;
     margin-bottom: 2rem;
 }
-.office-container{
-    background-image: url(../img/officepeople.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
 .icon-container i{
     color: cornflowerblue;
     font-size: 3rem;
@@ -531,7 +624,7 @@ body{
 .who-we-are.active{
     opacity: 1;
     z-index: 1000;
-    transition: all 1s ease-in-out
+    transition: all .6s ease-in-out
 }
 .who-we-are{
     opacity: 0;
@@ -1050,6 +1143,9 @@ a .post-main{
     text-align: center;
     border-bottom: 1px solid rgba(233,233,233,0.2);
 }
+    .social-navbar i{
+        display: none;
+}
 
 .social-navbar li{
     padding: 1rem;
@@ -1070,56 +1166,27 @@ a .post-main{
     display: inline-block;
     position: relative;
 }
-
 .social-navbar li a{
     color: #fff;
 }
-
 .social-navbar li:nth-of-type(7)::after{
     display: none;
 }
-
 .social-navbar li a:hover{
     
     text-decoration: none;
     color: #ccc;
     transition: all 0.6s ease-in-out;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .footer-links li{
     display: inline-block;
     width: 40%;
     padding: 8px;
 }
-
 .footer-links li a{
     font-size: 13px;
     color: #fff;
 }
-
 .footer-links-title {
     font-size: 14px;
     font-weight: 600;
@@ -1137,13 +1204,11 @@ a .post-main{
     position: absolute;
     left: -15px;
 }
-
 .addres-text {
     font-size: 13px;
     padding-bottom: 1rem;
 
 }
-
 .copyright {
     padding: 1rem;
 }

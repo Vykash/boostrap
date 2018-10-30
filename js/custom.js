@@ -67,7 +67,7 @@ jQuery(document).ready(function() {
         //rimuovo tutti gli elementi active
         jQuery('.who-we-are').removeClass('active');
         //aggiungo la classe active all' elemento con il 'data-target' uguale a quello del link
-        jQuery('.who-we-are[data-target='+attrLink+']').addClass('active');
+        jQuery('.who-we-are[data-target='+attrLink+']').addClass('active')
           
     })
     
