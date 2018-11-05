@@ -335,10 +335,18 @@
     }
     /*SLIDER*/
     
+     .brand-item{
+        opacity: 0;
+        position: absolute;
+        top: 18px;
+        left: -220px;
+    }
+    
     .brand-item.slider-active{
         opacity: 1;
         display: block;
-        transition: all 1.5s ease-in-out;
+        transition: all .7s ease-in-out;
+        left: 110px;
     }  
     .brands-inner{
         position: relative;
@@ -359,12 +367,6 @@
     }
     .slider-button-left{
         left: 0px;
-    }
-    .brand-item{
-        opacity: 0;
-        position: absolute;
-        top: 18px;
-        left: 113px;
     }
     
 }
