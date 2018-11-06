@@ -79,7 +79,7 @@ jQuery(document).ready(function () {
     
     //SLIDER 'on click' CON INDICE (PRIMA VERSIONE)
     
-    jQuery('.brands-inner .brand-item').each(function () {
+    /*jQuery('.brands-inner .brand-item').each(function () {
         var index = jQuery(this).index()
         jQuery(this).attr('data-order', index);
     });
@@ -107,7 +107,7 @@ jQuery(document).ready(function () {
         }
         jQuery('.brand-item[data-order=' + y + ']').addClass('slider-active');
         currentImg.removeClass('slider-active');
-    });
+    });*/
 
     //////////////////////////////////////////////////////////////////////
     //////////////////////////////////////////////////////////////////////
@@ -115,14 +115,15 @@ jQuery(document).ready(function () {
 
     //SLIDER 'on click' CON INDICE (VERSIONE MIGLIORATA)
 
-    /*var x = 0; //contatore unico per le immagini
+    var x = 0; //contatore unico per le immagini
     var y = jQuery('.brands-inner .brand-item').length;
 
     jQuery('.brands-inner .brand-item').each(function(){
             var index = jQuery(this).index();
             jQuery(this).attr('data-order', index);
         });
-    jQuery('.slider-button-right').on('click',function(){
+    
+    function next_slide(){
         var currentImg = jQuery('.brand-item.slider-active');
         //proseguo verso destra incrementando 'x' ad ogni click
         //se 'x' dovesse essere uguale al numero di elementi - 1 ( ovvero all'ultima immagine dello slider )
@@ -133,8 +134,8 @@ jQuery(document).ready(function () {
         x++;
         jQuery('.brand-item[data-order='+x+']').addClass('slider-active');
             currentImg.removeClass('slider-active'); 
-    });
-    jQuery('.slider-button-left').on('click',function(){
+    }
+    function prev_slide(){
         var currentImg = jQuery('.brand-item.slider-active');
         //stesso procedimento ma decrementando il valore di 'x'(per tornare indietro)
             if (x == 0){
@@ -142,35 +143,50 @@ jQuery(document).ready(function () {
             };
         x--;
         jQuery('.brand-item[data-order='+x+']').addClass('slider-active');
-            currentImg.removeClass('slider-active');
-    });*/
+            currentImg.removeClass('slider-active'); 
+    }
+    
+    jQuery('.slider-button-right').on('click',function(){
+        next_slide();
+    });
+    jQuery('.slider-button-left').on('click',function(){
+        prev_slide();
+    });
 
     ///////////////////////////////////////////////////////////////////////
     //////////////////////////////////////////////////////////////////////
     
     //SLIDER CON TIMER
-    
-        var x = 0;
-        var y = jQuery('.brands-inner .brand-item').length;
-
-        jQuery('.brands-inner .brand-item').each(function () {
-            var index = jQuery(this).index();
-            jQuery(this).attr('data-order', index);
-        });
-    
     //FUNZIONE CUSTOM
     function autoSlider() {
-        var currentImg = jQuery('.brand-item.slider-active');
-            if(x == y -1){
-                x = x - y;
-            }
-        x++;
-        jQuery('.brand-item[data-order='+x+']').addClass('slider-active');
-        currentImg.removeClass('slider-active');
+        next_slide();
     };
-    //Richiamo la funzione
     
-    setInterval(autoSlider,2000);
+    jQuery(window).on('keydown',function(e){
+        evento = e.keyCode;
+        
+        if(evento == 39){
+            next_slide();
+        }else if(evento == 37){
+            prev_slide();
+        }
+    })
+    
+    jQuery(window).on('blur',function(){
+        clearInterval(slideTimer); 
+    }).on('focus',function(){
+        slideTimer = setInterval(autoSlider,2000);
+    });
+    
+    
+    //Richiamo la funzione
+    var slideTimer = setInterval(autoSlider,2000);
+    
+    jQuery('.brands-inner').on('mouseover',function(){
+        clearInterval(slideTimer);
+    }).on('mouseout',function(){
+        slideTimer = setInterval(autoSlider,2000);
+    })
     
     //////////////////////////////////////////////////////////////////////
     //////////////////////////////////////////////////////////////////////
